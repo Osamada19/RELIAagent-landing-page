@@ -961,6 +961,10 @@
                 display: none;
             }
 
+            .nav-actions>.button.nav-cta {
+                display: inline-flex;
+            }
+
             .site-nav {
                 position: absolute;
                 top: 64px;
@@ -1180,7 +1184,7 @@
                     <button type="button" class="active" data-lang="en">EN</button>
                     <button type="button" data-lang="fr">FR</button>
                 </div>
-                <a class="button button-primary" href="#contact" data-copy="navCta">Get a demo</a>
+                <a class="button button-primary nav-cta" href="https://wa.me/000000000000" target="_blank" rel="noopener" data-copy="navCta">Test agent live</a>
                 <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
                     <span></span>
                 </button>
@@ -1195,6 +1199,9 @@
                 <h1 data-copy="heroTitle">AI agents that handle your customers.</h1>
                 <p class="hero-copy" data-copy="heroDescription">RELIAagents answers questions, recommends products,
                     takes orders, and hands off conversations when human help is needed.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="https://wa.me/000000000000" target="_blank" rel="noopener" data-copy="navCta">Test agent live</a>
+                </div>
                 <p class="hero-note" data-copy="heroNote">Built for real customer conversations.</p>
             </div>
         </section>
@@ -1491,7 +1498,7 @@
         const translations = {
             en: {
                 navProduct: "Product", navHow: "How it works", navIndustries: "Industries", navContact: "Contact",
-                navCta: "Get a demo", heroEyebrow: "Customer service, handled",
+                navCta: "Test agent live", heroEyebrow: "Customer service, handled",
                 heroTitle: "AI agents that handle your customers.",
                 heroDescription: "RELIAagents answers questions, recommends products, takes orders, and hands off conversations when human help is needed.",
                 heroNote: "Built for real customer conversations.",
@@ -1534,7 +1541,7 @@
             },
             fr: {
                 navProduct: "Produit", navHow: "Fonctionnement", navIndustries: "Secteurs", navContact: "Contact",
-                navCta: "Demander une démo", heroEyebrow: "Service client, simplifié",
+                navCta: "Tester l'agent en direct", heroEyebrow: "Service client, simplifié",
                 heroTitle: "Des agents IA qui gèrent vos clients.",
                 heroDescription: "RELIAagents répond aux questions, recommande des produits, prend les commandes et vous transfère les conversations qui nécessitent une intervention humaine.",
                 heroNote: "Conçu pour de vraies conversations clients.",
@@ -1570,7 +1577,7 @@
                 ctaTryDescription: "Testez l'agent en direct et posez-lui toutes vos questions sur les produits, la livraison ou les commandes — avant d'en créer un pour votre entreprise.",
                 ctaTitle: "Prêt à créer un agent pour votre boutique ?",
                 ctaDescription: "Créons un agent IA adapté à vos produits, vos clients et votre façon de travailler.",
-                ctaWhatsapp: "WhatsApp",
+                ctaWhatsapp: "Contact Oussama",
                 footerDescription: "Des agents IA pour les entreprises en contact avec leurs clients.",
                 footerNote: "Conçu pour de vraies conversations clients.", playDemo: "Lire la vidéo de démo",
                 toast: "Ajoutez la source vidéo vérifiée dans la configuration des démos."
