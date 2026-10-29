@@ -740,6 +740,66 @@
             box-shadow: 0 2px 8px rgba(12, 28, 34, 0.03);
         }
 
+        .demo-cta-banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            margin: 48px auto 0;
+            padding: 36px 44px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid var(--line);
+            box-shadow: 0 10px 30px -6px rgba(12, 28, 34, 0.05);
+            backdrop-filter: blur(12px);
+        }
+
+        .demo-cta-copy h3 {
+            margin-bottom: 8px;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -.035em;
+            color: var(--ink);
+        }
+
+        .demo-cta-copy p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14.5px;
+            line-height: 1.6;
+            max-width: 580px;
+        }
+
+        .demo-store-note {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .demo-store-note::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent-emerald);
+            box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+        }
+
+        .demo-cta-action {
+            flex: 0 0 auto;
+        }
+
+        .demo-cta-action .button-primary {
+            min-height: 48px;
+            padding: 0 28px;
+            font-size: 14px;
+        }
+
         .capability-layout {
             display: grid;
             grid-template-columns: .75fr 1.25fr;
@@ -1161,7 +1221,7 @@
 
         .final-cta h2 {
             max-width: 610px;
-            margin-top: 24px;
+            margin-top: 0;
             color: #ffffff;
             font-size: clamp(30px, 3.8vw, 48px);
         }
@@ -1383,8 +1443,21 @@
             }
 
             .section-heading,
+            .demo-cta-banner,
             .final-cta {
                 display: block;
+            }
+
+            .demo-cta-banner {
+                padding: 28px 22px;
+            }
+
+            .demo-cta-action {
+                margin-top: 24px;
+            }
+
+            .demo-cta-action .button {
+                width: 100%;
             }
 
             .section-subtitle {
@@ -1524,9 +1597,6 @@
                 <h1 data-copy="heroTitle">AI agents that handle your customers.</h1>
                 <p class="hero-copy" data-copy="heroDescription">RELIAagents answers questions, recommends products,
                     takes orders, and hands off conversations when human help is needed.</p>
-                <div class="hero-actions">
-                    <a class="button button-primary" href="https://wa.me/212706613437" target="_blank" rel="noopener" data-copy="navCta">Test agent live</a>
-                </div>
                 <p class="hero-note" data-copy="heroNote">Built for real customer conversations.</p>
                 <div class="hero-badges">
                     <span class="hero-badge" data-copy="heroBadge1">⚡ 24/7 Instant replies</span>
@@ -1588,18 +1658,20 @@
                     </div>
                     <span class="demo-context" data-copy="demoContext">Current demo: Electric Mobility</span>
                 </div>
+
+                <div class="demo-cta-banner reveal">
+                    <div class="demo-cta-copy">
+                        <h3 data-copy="ctaTryTitle">Want to try it yourself?</h3>
+                        <p data-copy="ctaTryDescription">Test the live agent and ask it anything about products, delivery,
+                            or orders — before building one for your business.</p>
+                        <span class="demo-store-note">Live demo — example store: ElectroMA.</span>
+                    </div>
+                    <div class="demo-cta-action">
+                        <a class="button button-primary" href="https://wa.me/212706613437?text=Hi" target="_blank" rel="noopener" data-copy="navCta">Test agent live</a>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <div style="text-align:center;padding:32px 24px 8px;">
-            <a class="button button-primary" href="https://wa.me/2120706613437?text=Hi" target="_blank" rel="noopener"
-                style="min-height:46px;padding:0 28px;font-size:14px;box-shadow:0 10px 24px -6px rgba(15,115,105,.32);">
-                Test it live
-            </a>
-            <p style="margin:12px auto 0;color:var(--muted);font-size:12px;max-width:320px;">
-                Live demo — example store: ElectroMA.
-            </p>
-        </div>
 
         <section class="section section-border" id="capabilities">
             <div class="shell">
@@ -1769,9 +1841,6 @@
         <section class="section section-border">
             <div class="shell final-cta reveal" id="contact">
                 <div class="final-cta-copy">
-                    <h3 class="final-cta-note" data-copy="ctaTryTitle">Want to try it yourself?</h3>
-                    <p data-copy="ctaTryDescription">Test the live agent and ask it anything about products, delivery,
-                        or orders — before building one for your business.</p>
                     <h2 data-copy="ctaTitle">Ready to build an agent for your store?</h2>
                     <p data-copy="ctaDescription">Let’s create an AI agent tailored to your products, customers, and way
                         of working.</p>
